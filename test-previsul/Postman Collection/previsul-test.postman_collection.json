@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "52fc77d6-b762-45e0-a4cf-7a38ce17b4a0",
+		"name": "previsul-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Inclusao cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Fernando Augusto Santos\",\r\n    \"birthday\":\"1994-11-04\",\r\n    \"email\":\"fstrony@gmail.com.br\",\r\n    \"phone\":\"(11) 97262-5933\",\r\n    \"addresses\":[\r\n        {\r\n            \"StreetName\": \"Rua X\",\r\n            \"Number\": 20,\r\n            \"Neighbourhood\": \"Bairro X\",\r\n            \"PostalCode\": \"123245\",\r\n            \"City\": \"Cidade X\",\r\n            \"State\": \"State X\"\r\n        },\r\n        {\r\n            \"StreetName\": \"Rua Y\",\r\n            \"Number\": 30,\r\n            \"Neighbourhood\": \"Bairro Y\",\r\n            \"PostalCode\": \"123245\",\r\n            \"City\": \"Cidade Y\",\r\n            \"State\": \"State Y\"\r\n        }\r\n    ],\r\n    \"id\":\"50e5d68e-63ab-473a-83f4-b6fec8c09f4c\",\r\n    \"registrationDate\":\"2020-08-08T16:56:04.4\",\r\n    \"modificationDate\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/customer/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"customer",
+						"register"
+					]
+				},
+				"description": "Cadastrar cliente\r\n\r\nhttps://localhost:44399/customer/register\r\n\r\n\r\n{\r\n    \"name\":\"Fernando Augusto Santos\",\r\n    \"birthday\":\"1994-11-04\",\r\n    \"email\":\"fstrony@gmail.com.br\",\r\n    \"phone\":\"(11) 97262-5933\",\r\n    \"addresses\":[\r\n        {\r\n            \"StreetName\": \"Rua X\",\r\n            \"Number\": 20,\r\n            \"Neighbourhood\": \"Bairro X\",\r\n            \"PostalCode\": \"123245\",\r\n            \"City\": \"Cidade X\",\r\n            \"State\": \"State X\"\r\n        },\r\n        {\r\n            \"StreetName\": \"Rua Y\",\r\n            \"Number\": 30,\r\n            \"Neighbourhood\": \"Bairro Y\",\r\n            \"PostalCode\": \"123245\",\r\n            \"City\": \"Cidade Y\",\r\n            \"State\": \"State Y\"\r\n        }\r\n    ],\r\n    \"id\":\"50e5d68e-63ab-473a-83f4-b6fec8c09f4c\",\r\n    \"registrationDate\":\"2020-08-08T16:56:04.4\",\r\n    \"modificationDate\":null\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Inclusao cliente Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Fernando Augusto Santos EDITADO\",\r\n    \"birthday\":\"1994-11-04\",\r\n    \"email\":\"fstrony@gmail.com.br\",\r\n    \"phone\":\"(11) 97262-5933\",\r\n    \"addresses\":[\r\n        {\r\n            \"StreetName\": \"Rua X\",\r\n            \"Number\": 20,\r\n            \"Neighbourhood\": \"Bairro X\",\r\n            \"PostalCode\": \"123245\",\r\n            \"City\": \"Cidade X\",\r\n            \"State\": \"State X\"\r\n        },\r\n        {\r\n            \"StreetName\": \"Rua Y\",\r\n            \"Number\": 30,\r\n            \"Neighbourhood\": \"Bairro Y\",\r\n            \"PostalCode\": \"123245\",\r\n            \"City\": \"Cidade Y\",\r\n            \"State\": \"State Y\"\r\n        }\r\n    ],\r\n    \"id\":\"50e5d68e-63ab-473a-83f4-b6fec8c09f4c\",\r\n    \"registrationDate\":\"2020-08-08T16:56:04.4\",\r\n    \"modificationDate\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/customer/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"customer",
+						"update"
+					]
+				},
+				"description": "Atualizar cliente\r\n\r\nhttps://localhost:44300/customer/update\r\n\r\n\r\n{\r\n    \"name\":\"Fernando Augusto Santos EDITADO\",\r\n    \"birthday\":\"1994-11-04\",\r\n    \"email\":\"fstrony@gmail.com.br\",\r\n    \"phone\":\"(11) 97262-5933\",\r\n    \"addresses\":[\r\n        {\r\n            \"StreetName\": \"Rua X\",\r\n            \"Number\": 20,\r\n            \"Neighbourhood\": \"Bairro X\",\r\n            \"PostalCode\": \"123245\",\r\n            \"City\": \"Cidade X\",\r\n            \"State\": \"State X\"\r\n        },\r\n        {\r\n            \"StreetName\": \"Rua Y\",\r\n            \"Number\": 30,\r\n            \"Neighbourhood\": \"Bairro Y\",\r\n            \"PostalCode\": \"123245\",\r\n            \"City\": \"Cidade Y\",\r\n            \"State\": \"State Y\"\r\n        }\r\n    ],\r\n    \"id\":\"50e5d68e-63ab-473a-83f4-b6fec8c09f4c\",\r\n    \"registrationDate\":\"2020-08-08T16:56:04.4\",\r\n    \"modificationDate\":null\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos os clientes cadastrados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/customer/index",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"customer",
+						"index"
+					]
+				},
+				"description": "Listar todos os clientes cadastrados\r\n\r\nhttps://localhost:44300/customer/index\r\n\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Cliente por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/customer/search/50e5d68e-63ab-473a-83f4-b6fec8c09f4c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"customer",
+						"search",
+						"50e5d68e-63ab-473a-83f4-b6fec8c09f4c"
+					]
+				},
+				"description": "Listar Cliente por ID\r\n\r\nhttps://localhost:44300/customer/search/{id}\r\n\r\n- Inserior o id no lugar do {id}"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Cliente por ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/customer/delete/50e5d68e-63ab-473a-83f4-b6fec8c09f4c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"customer",
+						"delete",
+						"50e5d68e-63ab-473a-83f4-b6fec8c09f4c"
+					]
+				},
+				"description": "Deletar Cliente por ID\r\n\r\nhttps://localhost:44300/customer/delete/50e5d68e-63ab-473a-83f4-b6fec8c09f4c\r\n\r\n- Inserior o id no lugar do {id}"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
